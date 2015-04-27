@@ -39,8 +39,8 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 #define LED5 LATBbits.LATB14 // For LED 5 (Turned on represents the robot reading Black on the middle.)
 #define LED6 LATBbits.LATB13 // For LED 6 (Turned on represents the robot reading Black on the right.)
 
-#define changeThreshold 300 //The threshold at which the black line is detected
-#define RightChangeThreshold  300
+#define changeThreshold 200 //The threshold at which the black line is detected
+#define RightChangeThreshold  200
 
 void initLEDs();
 void turnOnLED(int led);

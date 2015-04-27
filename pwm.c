@@ -10,8 +10,8 @@
 #include "timer.h"
 
 //#define FULLSPEED (unsigned int) (PR3)
-#define FULLSPEED (unsigned int) (PR3 * (double)(3.285 / (1.5*3.285))) //for right
-#define FULLSPEEDRIGHT (unsigned int) (PR3 * (double)(3.285 / (1.0*3.285))) //for right
+#define FULLSPEED (unsigned int) (PR3 * (double)(2.8 / (1.5*3.285))) //for right
+#define FULLSPEEDRIGHT (unsigned int) (PR3 * (double)(2.8 / (1.0*3.285))) //for right
 #define STOP 0
 #define fractionofFULLSPEED (unsigned int) ((PR3) * (double)(1.0/3.285) )
 

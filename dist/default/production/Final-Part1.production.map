@@ -1,26 +1,26 @@
-Microchip Technology Inc, vv1.23 (A)
+Microchip Technology Inc, vv1.24 (0)
 
 Tool Name:
-  c:\program files (x86)\microchip\xc16\v1.23\bin\bin\..\bin/elf-ld.exe
+  c:\program files (x86)\microchip\xc16\v1.24\bin\bin\..\bin/elf-ld.exe
 
 Command:
   -p24FJ64GA002 \
   -o \
   dist/default/production/Final-Part1.production.elf \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/.. \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24E \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/PIC24E/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24F \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/PIC24F/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24H \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/PIC24H/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/dsPIC30F \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/dsPIC30F/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/dsPIC33E \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/dsPIC33E/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/dsPIC33F \
-  -Lc:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../support/dsPIC33F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/.. \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24E \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24H \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC30F \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33E \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/dsPIC33F \
+  -Lc:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../support/dsPIC33F/gld \
   build/default/production/adc.o \
   build/default/production/initSW.o \
   build/default/production/LabFinaPart1.o \
@@ -50,26 +50,26 @@ Command:
 
 Archive member included because of file (symbol)
 
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
                               (__resetPRI)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
-                              c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o) (__data_init_standard)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                              c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o) (__data_init_standard)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
                               build/default/production/pwm.o (___fixunssfsi)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
                               build/default/production/pwm.o (___floatunsisf)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(funpack.eo)
-                              c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo) (__funpack)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(funpack.eo)
+                              c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo) (__funpack)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
                               build/default/production/pwm.o (___mulsf3)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
-                              c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(floatunsisf.eo) (___floatundisf)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(fpack.eo)
-                              c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(mulsf3.eo) (__fpack)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(funpack2.eo)
-                              c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(mulsf3.eo) (__funpack2)
-c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(futil.eo)
-                              c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(mulsf3.eo) (__fPropagateNaN)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+                              c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(floatunsisf.eo) (___floatundisf)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(fpack.eo)
+                              c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(mulsf3.eo) (__fpack)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(funpack2.eo)
+                              c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(mulsf3.eo) (__funpack2)
+c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(futil.eo)
+                              c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(mulsf3.eo) (__fPropagateNaN)
 
 
 Program Memory  [Origin = 0x200, Length = 0xa9fc]
@@ -77,10 +77,10 @@ Program Memory  [Origin = 0x200, Length = 0xa9fc]
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x244           0x366  (870)
-.text                        0x444               0x646           0x969  (2409)
-.dinit                       0xa8a                 0x8             0xc  (12)
+.text                        0x444               0x65e           0x98d  (2445)
+.dinit                       0xaa2                 0x8             0xc  (12)
 
-                     Total program memory used (bytes):          0xcdb  (3291) 5%
+                     Total program memory used (bytes):          0xcff  (3327) 5%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -140,40 +140,40 @@ External Symbols in Program Memory (by address):
                   0x000436                  __fbopExit
                   0x00043e                  __fbopReturnNaN
                   0x000444                  _initADC
-                  0x0004a0                  _leftSensorADC
-                  0x000508                  _middleSensorADC
-                  0x000570                  _rightSensorADC
-                  0x0005d8                  _writeFourBits
-                  0x00062e                  _writeLCD
-                  0x00064e                  _printCharLCD
-                  0x000660                  _initLCD
-                  0x0006ba                  _printStringLCD
-                  0x0006e2                  _clearLCD
-                  0x0006f0                  _moveCursorLCD
-                  0x000722                  _clearPrintStringLCD
-                  0x000768                  _main
-                  0x0007be                  __CNInterrupt
-                  0x0007f6                  __ADC1Interrupt
-                  0x000848                  _initLEDs
-                  0x00085a                  _turnOnLED
-                  0x000886                  _assignColors
-                  0x0008c2                  _initPWMLeft
-                  0x0008fc                  _initPWMRight
-                  0x000924                  _spinForward
-                  0x000942                  _turnRight
-                  0x000960                  _turnLeft
-                  0x00097e                  _turnAround
-                  0x0009c0                  _spinBackward
-                  0x0009f2                  _idleFunction
-                  0x000a00                  _delayUs
-                  0x000a30                  _delayMs
-                  0x000a60                  _initTimer1
-                  0x000a7c                  _initSW1
+                  0x0004a2                  _leftSensorADC
+                  0x00050a                  _middleSensorADC
+                  0x000572                  _rightSensorADC
+                  0x0005da                  _writeFourBits
+                  0x000630                  _writeLCD
+                  0x000650                  _printCharLCD
+                  0x000662                  _initLCD
+                  0x0006bc                  _printStringLCD
+                  0x0006e4                  _clearLCD
+                  0x0006f2                  _moveCursorLCD
+                  0x000724                  _clearPrintStringLCD
+                  0x00076a                  _initPWMLeft
+                  0x0007a4                  _initPWMRight
+                  0x0007cc                  _spinForward
+                  0x0007f4                  _turnRight
+                  0x00081c                  _turnLeft
+                  0x000844                  _turnAround
+                  0x000886                  _spinBackward
+                  0x0008b8                  _idleFunction
+                  0x0008c6                  _main
+                  0x00091c                  __CNInterrupt
+                  0x000950                  __ADC1Interrupt
+                  0x00099e                  _initLEDs
+                  0x0009b0                  _turnOnLED
+                  0x0009dc                  _assignColors
+                  0x000a18                  _delayUs
+                  0x000a48                  _delayMs
+                  0x000a78                  _initTimer1
+                  0x000a94                  _initSW1
 
 External Symbols in Program Memory (by name):
 
-                  0x0007f6                  __ADC1Interrupt
-                  0x0007be                  __CNInterrupt
+                  0x000950                  __ADC1Interrupt
+                  0x00091c                  __CNInterrupt
                   0x00029a                  __DefaultInterrupt
                   0x00029e                  ___fixunssfsi
                   0x00036a                  ___floatundisf
@@ -189,34 +189,34 @@ External Symbols in Program Memory (by name):
                   0x000414                  __funpack2
                   0x00022c                  __psv_init
                   0x000200                  __resetPRI
-                  0x000886                  _assignColors
-                  0x0006e2                  _clearLCD
-                  0x000722                  _clearPrintStringLCD
-                  0x000a30                  _delayMs
-                  0x000a00                  _delayUs
-                  0x0009f2                  _idleFunction
+                  0x0009dc                  _assignColors
+                  0x0006e4                  _clearLCD
+                  0x000724                  _clearPrintStringLCD
+                  0x000a48                  _delayMs
+                  0x000a18                  _delayUs
+                  0x0008b8                  _idleFunction
                   0x000444                  _initADC
-                  0x000660                  _initLCD
-                  0x000848                  _initLEDs
-                  0x0008c2                  _initPWMLeft
-                  0x0008fc                  _initPWMRight
-                  0x000a7c                  _initSW1
-                  0x000a60                  _initTimer1
-                  0x0004a0                  _leftSensorADC
-                  0x000768                  _main
-                  0x000508                  _middleSensorADC
-                  0x0006f0                  _moveCursorLCD
-                  0x00064e                  _printCharLCD
-                  0x0006ba                  _printStringLCD
-                  0x000570                  _rightSensorADC
-                  0x0009c0                  _spinBackward
-                  0x000924                  _spinForward
-                  0x00097e                  _turnAround
-                  0x000960                  _turnLeft
-                  0x00085a                  _turnOnLED
-                  0x000942                  _turnRight
-                  0x0005d8                  _writeFourBits
-                  0x00062e                  _writeLCD
+                  0x000662                  _initLCD
+                  0x00099e                  _initLEDs
+                  0x00076a                  _initPWMLeft
+                  0x0007a4                  _initPWMRight
+                  0x000a94                  _initSW1
+                  0x000a78                  _initTimer1
+                  0x0004a2                  _leftSensorADC
+                  0x0008c6                  _main
+                  0x00050a                  _middleSensorADC
+                  0x0006f2                  _moveCursorLCD
+                  0x000650                  _printCharLCD
+                  0x0006bc                  _printStringLCD
+                  0x000572                  _rightSensorADC
+                  0x000886                  _spinBackward
+                  0x0007cc                  _spinForward
+                  0x000844                  _turnAround
+                  0x00081c                  _turnLeft
+                  0x0009b0                  _turnOnLED
+                  0x0007f4                  _turnRight
+                  0x0005da                  _writeFourBits
+                  0x000630                  _writeLCD
 
 Memory Configuration
 
@@ -240,8 +240,8 @@ LOAD build/default/production/lcd.o
 LOAD build/default/production/pwm.o
 LOAD build/default/production/timer.o
                     0x0001                  __MPLAB_BUILD = 0x1
-LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib/PIC24F\libpPIC24Fxxx-elf.a
-LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libfx-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib/PIC24F\libpPIC24Fxxx-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libfx-elf.a
                     0xabfc                  __CONFIG2 = 0xabfc
                     0xabfe                  __CONFIG1 = 0xabfe
                     0x0001                  __NO_HANDLES = 0x1
@@ -260,11 +260,11 @@ LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libfx-elf.a
 
 .text             0x000200        0x244
  *(.init)
- .init            0x000200         0x3c c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+ .init            0x000200         0x3c c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
                   0x000200                  __resetPRI
                   0x000200                  __reset
                   0x00022c                  __psv_init
- .init            0x00023c         0x5e c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+ .init            0x00023c         0x5e c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
                   0x00023c                  __data_init_standard
                   0x00023c                  __data_init
  *(.user_init)
@@ -277,31 +277,31 @@ LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libfx-elf.a
  *(.libdsp)
  *(.lib*)
  .libm.fixunssfsi
-                  0x00029e         0x36 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
+                  0x00029e         0x36 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
                   0x00029e                  ___fixunssfsi
  .libm.floatunsisf
-                  0x0002d4          0x4 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
+                  0x0002d4          0x4 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
                   0x0002d4                  ___floatunsisf
- .libm.funpack    0x0002d8         0x2a c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(funpack.eo)
+ .libm.funpack    0x0002d8         0x2a c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(funpack.eo)
                   0x0002d8                  __funpack
- .libm.mulsf3     0x000302         0x68 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+ .libm.mulsf3     0x000302         0x68 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
                   0x000302                  ___mulsf3
  .libm.floatundisf
-                  0x00036a         0x5e c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+                  0x00036a         0x5e c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
                   0x00036a                  ___floatundisf
- .libm.fpack      0x0003c8         0x4c c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(fpack.eo)
+ .libm.fpack      0x0003c8         0x4c c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(fpack.eo)
                   0x0003c8                  __fpack
  .libm.funpack2
-                  0x000414         0x10 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(funpack2.eo)
+                  0x000414         0x10 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(funpack2.eo)
                   0x000414                  __funpack2
  .libm.fPropagateNaN
-                  0x000424         0x12 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x000424         0x12 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(futil.eo)
                   0x000424                  __fPropagateNaN
  .libm.fbobExit
-                  0x000436          0x8 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x000436          0x8 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(futil.eo)
                   0x000436                  __fbopExit
  .libm.fbopReturnNaN
-                  0x00043e          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x00043e          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(futil.eo)
                   0x00043e                  __fbopReturnNaN
 
 usercode
@@ -318,14 +318,14 @@ __CONFIG1         0x00abfe          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x32aa
+.debug_info       0x000000       0x32a0
  *(.debug_info)
- .debug_info      0x000000        0xbbc build/default/production/adc.o
- .debug_info      0x000bbc        0x5a5 build/default/production/initSW.o
- .debug_info      0x001161        0xa23 build/default/production/LabFinaPart1.o
- .debug_info      0x001b84        0x5e4 build/default/production/lcd.o
- .debug_info      0x002168        0xaea build/default/production/pwm.o
- .debug_info      0x002c52        0x658 build/default/production/timer.o
+ .debug_info      0x000000        0xbb9 build/default/production/adc.o
+ .debug_info      0x000bb9        0x5a6 build/default/production/initSW.o
+ .debug_info      0x00115f        0xa24 build/default/production/LabFinaPart1.o
+ .debug_info      0x001b83        0x5e1 build/default/production/lcd.o
+ .debug_info      0x002164        0xae7 build/default/production/pwm.o
+ .debug_info      0x002c4b        0x655 build/default/production/timer.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0x5eb
@@ -426,13 +426,13 @@ __CONFIG1         0x00abfe          0x2
                   0x000028          0x4 LONG 0x29a DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002a          0x4 LONG 0x29a DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002c          0x4 LONG 0x29a DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00002e          0x4 LONG 0x7f6 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00002e          0x4 LONG 0x950 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000030          0x4 LONG 0x29a DEFINED (__Interrupt14)?ABSOLUTE (__Interrupt14):ABSOLUTE (__DefaultInterrupt)
                   0x000032          0x4 LONG 0x29a DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000034          0x4 LONG 0x29a DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000036          0x4 LONG 0x29a DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000038          0x4 LONG 0x29a DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003a          0x4 LONG 0x7be DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003a          0x4 LONG 0x91c DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003c          0x4 LONG 0x29a DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003e          0x4 LONG 0x29a DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000040          0x4 LONG 0x29a DEFINED (__Interrupt22)?ABSOLUTE (__Interrupt22):ABSOLUTE (__DefaultInterrupt)
@@ -554,13 +554,13 @@ __CONFIG1         0x00abfe          0x2
                   0x000128          0x4 LONG 0x29a DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012a          0x4 LONG 0x29a DEFINED (__AltU1RXInterrupt)?ABSOLUTE (__AltU1RXInterrupt):DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012c          0x4 LONG 0x29a DEFINED (__AltU1TXInterrupt)?ABSOLUTE (__AltU1TXInterrupt):DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00012e          0x4 LONG 0x7f6 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00012e          0x4 LONG 0x950 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000130          0x4 LONG 0x29a DEFINED (__AltInterrupt14)?ABSOLUTE (__AltInterrupt14):DEFINED (__Interrupt14)?ABSOLUTE (__Interrupt14):ABSOLUTE (__DefaultInterrupt)
                   0x000132          0x4 LONG 0x29a DEFINED (__AltInterrupt15)?ABSOLUTE (__AltInterrupt15):DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000134          0x4 LONG 0x29a DEFINED (__AltSI2C1Interrupt)?ABSOLUTE (__AltSI2C1Interrupt):DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000136          0x4 LONG 0x29a DEFINED (__AltMI2C1Interrupt)?ABSOLUTE (__AltMI2C1Interrupt):DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000138          0x4 LONG 0x29a DEFINED (__AltCompInterrupt)?ABSOLUTE (__AltCompInterrupt):DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00013a          0x4 LONG 0x7be DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00013a          0x4 LONG 0x91c DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013c          0x4 LONG 0x29a DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013e          0x4 LONG 0x29a DEFINED (__AltInterrupt21)?ABSOLUTE (__AltInterrupt21):DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000140          0x4 LONG 0x29a DEFINED (__AltInterrupt22)?ABSOLUTE (__AltInterrupt22):DEFINED (__Interrupt22)?ABSOLUTE (__Interrupt22):ABSOLUTE (__DefaultInterrupt)
@@ -1236,9 +1236,9 @@ __CONFIG1         0x00abfe          0x2
                     0x0230                  UART2 = 0x230
                     0x0230                  _UART2 = 0x230
 START GROUP
-LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a
-LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a
-LOAD c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libc-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libc-elf.a
 END GROUP
 OUTPUT(dist/default/production/Final-Part1.production.elf elf32-pic30)
 LOAD default_isr
@@ -1274,25 +1274,25 @@ __c30_signature
  __c30_signature
                   0x00049c          0x6 build/default/production/timer.o
  __c30_signature
-                  0x0004a2          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+                  0x0004a2          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x0004a8          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                  0x0004a8          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x0004ae          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
+                  0x0004ae          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
  __c30_signature
-                  0x0004b4          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
+                  0x0004b4          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
  __c30_signature
-                  0x0004ba          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(funpack.eo)
+                  0x0004ba          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(funpack.eo)
  __c30_signature
-                  0x0004c0          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+                  0x0004c0          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
  __c30_signature
-                  0x0004c6          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+                  0x0004c6          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
  __c30_signature
-                  0x0004cc          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(fpack.eo)
+                  0x0004cc          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(fpack.eo)
  __c30_signature
-                  0x0004d2          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(funpack2.eo)
+                  0x0004d2          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(funpack2.eo)
  __c30_signature
-                  0x0004d8          0x6 c:/program files (x86)/microchip/xc16/v1.23/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0004d8          0x6 c:/program files (x86)/microchip/xc16/v1.24/bin/bin/../../lib\libm-elf.a(futil.eo)
 
 .nbss               0x0800          0xe
  .nbss              0x0800          0xe build/default/production/LabFinaPart1.o
@@ -1304,43 +1304,43 @@ __c30_signature
                     0x080a                  _sensorMiddle
                     0x080c                  _sensorRight
 
-.text             0x000444        0x646
- .text            0x000444        0x194 build/default/production/adc.o
+.text             0x000444        0x65e
+ .text            0x000444        0x196 build/default/production/adc.o
                   0x000444                  _initADC
-                  0x0004a0                  _leftSensorADC
-                  0x000508                  _middleSensorADC
-                  0x000570                  _rightSensorADC
- .text            0x0005d8        0x190 build/default/production/lcd.o
-                  0x0005d8                  _writeFourBits
-                  0x00062e                  _writeLCD
-                  0x00064e                  _printCharLCD
-                  0x000660                  _initLCD
-                  0x0006ba                  _printStringLCD
-                  0x0006e2                  _clearLCD
-                  0x0006f0                  _moveCursorLCD
-                  0x000722                  _clearPrintStringLCD
- .text            0x000768        0x15a build/default/production/LabFinaPart1.o
-                  0x000768                  _main
-                  0x0007be                  __CNInterrupt
-                  0x0007f6                  __ADC1Interrupt
-                  0x000848                  _initLEDs
-                  0x00085a                  _turnOnLED
-                  0x000886                  _assignColors
- .text            0x0008c2        0x13e build/default/production/pwm.o
-                  0x0008c2                  _initPWMLeft
-                  0x0008fc                  _initPWMRight
-                  0x000924                  _spinForward
-                  0x000942                  _turnRight
-                  0x000960                  _turnLeft
-                  0x00097e                  _turnAround
-                  0x0009c0                  _spinBackward
-                  0x0009f2                  _idleFunction
- .text            0x000a00         0x7c build/default/production/timer.o
-                  0x000a00                  _delayUs
-                  0x000a30                  _delayMs
-                  0x000a60                  _initTimer1
- .text            0x000a7c          0xe build/default/production/initSW.o
-                  0x000a7c                  _initSW1
+                  0x0004a2                  _leftSensorADC
+                  0x00050a                  _middleSensorADC
+                  0x000572                  _rightSensorADC
+ .text            0x0005da        0x190 build/default/production/lcd.o
+                  0x0005da                  _writeFourBits
+                  0x000630                  _writeLCD
+                  0x000650                  _printCharLCD
+                  0x000662                  _initLCD
+                  0x0006bc                  _printStringLCD
+                  0x0006e4                  _clearLCD
+                  0x0006f2                  _moveCursorLCD
+                  0x000724                  _clearPrintStringLCD
+ .text            0x00076a        0x15c build/default/production/pwm.o
+                  0x00076a                  _initPWMLeft
+                  0x0007a4                  _initPWMRight
+                  0x0007cc                  _spinForward
+                  0x0007f4                  _turnRight
+                  0x00081c                  _turnLeft
+                  0x000844                  _turnAround
+                  0x000886                  _spinBackward
+                  0x0008b8                  _idleFunction
+ .text            0x0008c6        0x152 build/default/production/LabFinaPart1.o
+                  0x0008c6                  _main
+                  0x00091c                  __CNInterrupt
+                  0x000950                  __ADC1Interrupt
+                  0x00099e                  _initLEDs
+                  0x0009b0                  _turnOnLED
+                  0x0009dc                  _assignColors
+ .text            0x000a18         0x7c build/default/production/timer.o
+                  0x000a18                  _delayUs
+                  0x000a48                  _delayMs
+                  0x000a78                  _initTimer1
+ .text            0x000a94          0xe build/default/production/initSW.o
+                  0x000a94                  _initSW1
 
-.dinit            0x000a8a          0x8
- .dinit           0x000a8a          0x8 data_init
+.dinit            0x000aa2          0x8
+ .dinit           0x000aa2          0x8 data_init
