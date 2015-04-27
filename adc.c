@@ -12,7 +12,8 @@ void initADC(){
 
     AD1PCFGbits.PCFG0 = 0;     //Set pin 2 to analog
     AD1PCFGbits.PCFG1 = 0;     //Set pin 3 to analog
-    AD1PCFGbits.PCFG2 = 0;     //Set pin 4 to analog
+//    AD1PCFGbits.PCFG2 = 0;     //Set pin 4 to analog
+    AD1PCFGbits.PCFG12 = 0;  // set pin 23 to analog.
 
 //    AD1PCFGbits.PCFG10 = 0; // Configure pin 25 to analog
 //    AD1PCFGbits.PCFG11 = 0; // Configure pin 24 to analog
@@ -99,7 +100,8 @@ int rightSensorADC(){
     // A/D = OFF
     AD1CON1bits.ADON = 0;
     // Pin 4 --> corresponds to AN2
-    AD1CHS = 0x0002;
+    // Pin 23 --> AN12
+    AD1CHS = 0x000C;
     // A/D = ON
     AD1CON1bits.ADON = 1;
     //Sample

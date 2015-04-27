@@ -34,14 +34,17 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 #define ON 0
 #define OFF 1
 
-//Use defines for pin settings to make your code
-#define LED4 LATBbits.LATB15
-#define LED5 LATBbits.LATB14
-#define LED6 LATBbits.LATB13
+
+#define LED4 LATBbits.LATB15 // For LED 4 (Turned on represents the robot reading Black on the left.)
+#define LED5 LATBbits.LATB14 // For LED 5 (Turned on represents the robot reading Black on the middle.)
+#define LED6 LATBbits.LATB13 // For LED 6 (Turned on represents the robot reading Black on the right.)
 
 #define changeThreshold 300 //The threshold at which the black line is detected
 #define RightChangeThreshold  300
 
+void initLEDs();
+void turnOnLED(int led);
+void assignColors();
 //Pins used for the sensors:
 //left 23, middle 24, right 25
 //Rb 12-14
@@ -49,11 +52,9 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
 //FSM STATES--------------------
 typedef enum stateTypeEnum
 {
-        forward,
+        forwardState,
         turnLeftState,
         turnRightState,
-        //TODO: Make the robot turn around 180 degrees
-        //turnAround, 
         wait,
 
 } stateType;
@@ -71,10 +72,6 @@ volatile int sensorMiddle;
 volatile int sensorRight;
 
 
-
-volatile int linesDetected = 0 ;
-
-
 int main(void) {
     //Initialize components
     //char v[3];
@@ -82,47 +79,30 @@ int main(void) {
     initPWMLeft();
     initPWMRight();
     initADC();
-   // initLCD();
     initSW1();
-   // clearLCD();
-
-//   sensorLeft = 1;
-//   sensorMiddle = 0;
-//   sensorRight= 1;
 
     currState = wait;
 
-    while (1){
-       //Make the LCD display the reading from all three sensors.
-//        clearLCD();
-//        sprintf(v, "%d %d %d" , sensorLeft, sensorMiddle, sensorRight);
-//        printStringLCD(v);
-       
-//       delayMs(10);
-          sensorRightReading = rightSensorADC();
-          sensorMiddleReading = middleSensorADC();
-          sensorLeftReading = leftSensorADC();
-          
-          
+    while(1){
 
-       //Case Statement: FSM
+       sensorRightReading = rightSensorADC();
+       sensorMiddleReading = middleSensorADC();
+       sensorLeftReading = leftSensorADC();
+       assignColors();
+       turnOnLED(13);
        switch (currState){
             case wait:
                 idleFunction();
                 break;
-            case forward:
-               spinForward();
-                //spinBackward();
+            case forwardState:
+                spinForward();
                 break;
             case turnRightState:
-                turnRight(); //change the function
+                turnRight();
                 break;
             case turnLeftState:
-                turnLeft();  //change function
+                turnLeft();
                 break;
-//            case turnAround:
-//                turnAround(); //change function
-//                break;
        }
 
     }
@@ -132,16 +112,14 @@ int main(void) {
 void _ISR _CNInterrupt(void) {
 
     IFS1bits.CNIF = 0; //put the flag down
-//    delayMs(10);
 
      if(_RB5 == PRESSED){
 
          if (currState != wait){
              currState = wait;
          }
-
          else if (currState == wait){
-            currState = forward;
+            currState = forwardState;
          }
 
      }
@@ -154,70 +132,44 @@ void _ISR _CNInterrupt(void) {
  */
 void _ISR _ADC1Interrupt(void){
     IFS0bits.AD1IF = 0; //Put the interrupt flag down
-//    delayMs(500);
- //Set threshold to turn readings from ADC buffer into a 0 or 1-------------
+       
 
-    if(sensorRightReading < RightChangeThreshold){ //Buffer of pin 25
-        sensorRight = black;
-        turnOnLED(4);
-    }
-    else {
-        sensorRight = white;
-    }
-
-    if(sensorMiddleReading < changeThreshold){ //Buffer of pin 24
-        sensorMiddle = black;
-        turnOnLED(5);
-    }
-    else {
-        sensorMiddle = white;
-    }
-
-    if(sensorLeftReading < changeThreshold){ //Buffer of pin 23
-        sensorLeft = black;
-        turnOnLED(6);
-    }
-    else {
-        sensorLeft = white;
-    }
-
-//-------------------------------------------------------------------------
-
-//    sensorRight = ADC1BUFA;
-//    sensorMiddle = ADC1BUFB;
-//    sensorLeft = ADC1BUFC;
-
-//Decide on state based on sensor reading. Right sensor has priority.---------
+    //Decide on state based on sensor reading. Right sensor has priority.---------
     if(currState != wait){
-
         //If the sensors are exactly on the line and outside the line.
 
-        if (sensorLeft == white && sensorMiddle == black && sensorRight == white){
-            currState = forward;    //keep moving forward
-        }
-
-        //BBB = WWW
-        //if there is no line keep turning right until the line is found.
-        else if (sensorLeft == white && sensorRight == white && sensorMiddle == white){
+        if (sensorLeft == black && sensorMiddle == black && sensorRight == black){
             currState = turnRightState;
-        }
-
-        //If the sensor on the right detects a curve.
-        else if (sensorLeft == white && sensorMiddle == white && sensorRight == black){
+        }else if (sensorRight == black){
             currState = turnRightState;
-        }
-        else if (sensorLeft == white && sensorMiddle == black && sensorRight == black){
-            currState = turnRightState;
-        }
-
-
-        //If the sensor on the left detects a curve.
-        else if (sensorLeft == black && sensorMiddle == black && sensorRight == white){
+        }else if (sensorLeft == black){
             currState = turnLeftState;
+        }else {
+            currState = forwardState;
         }
-        else if (sensorLeft == black && sensorMiddle == white && sensorRight == white){
-            currState = turnLeftState;
-        }
+
+
+//        else if (sensorLeft == white && sensorMiddle == black && sensorRight == white){
+//            currState = forwardState;
+//        }
+//        //if there is no line keep turning right until the line is found.
+//        else if (sensorLeft == white && sensorRight == white && sensorMiddle == white){
+//            currState = turnRightState;
+//        }
+//        //If the sensor on the right detects a curve.
+//        else if (sensorLeft == white && sensorMiddle == white && sensorRight == black){
+//            currState = turnRightState;
+//        }
+//        else if (sensorLeft == white && sensorMiddle == black && sensorRight == black){
+//            currState = turnRightState;
+//        }
+//        //If the sensor on the left detects a curve.
+//        else if (sensorLeft == black && sensorMiddle == black && sensorRight == white){
+//            currState = turnLeftState;
+//        }
+//        else if (sensorLeft == black && sensorMiddle == white && sensorRight == white){
+//            currState = turnLeftState;
+//        }
 
    }
 //----------------------------------------------------------------------------
@@ -229,47 +181,48 @@ void initLEDs(){
 	TRISBbits.TRISB15 = 0;
 	TRISBbits.TRISB14 = 0;
 	TRISBbits.TRISB13 = 0;
-
-
 	LED4 = OFF;
 	LED5 = OFF;
 	LED6 = OFF;
-
 }
 
 void turnOnLED(int led){
-//	if (led == 4){
-//		LED4 = ON;
-//
-//	}
-//	else if (led == 5){
-//		LED5 = ON;
-//
-//	}
-//	else if (led == 6){
-//		LED6 = ON;
-//	}
 
         if (sensorRight == black){
             LED4 = ON;
-        }
-        else{
+        }else{
             LED4 = OFF;
         }
 
         if (sensorMiddle == black){
             LED5 = ON;
-        }
-        else{
+        }else{
             LED5 = OFF;
         }
 
         if (sensorLeft == black){
             LED6 = ON;
-        }
-        else{
+        }else{
             LED6 = OFF;
         }
-	
-	
+}
+
+void assignColors(){
+    if(sensorRightReading < RightChangeThreshold){ //Buffer of pin 25
+        sensorRight = black;
+    }else {
+        sensorRight = white;
+    }
+
+    if(sensorMiddleReading < changeThreshold){ //Buffer of pin 24
+        sensorMiddle = black;
+    }else {
+        sensorMiddle = white;
+    }
+
+    if(sensorLeftReading < changeThreshold){ //Buffer of pin 23
+        sensorLeft = black;
+    }else {
+        sensorLeft = white;
+    }
 }

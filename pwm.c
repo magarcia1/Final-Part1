@@ -10,9 +10,10 @@
 #include "timer.h"
 
 //#define FULLSPEED (unsigned int) (PR3)
-#define FULLSPEED (unsigned int) (PR3 * (double)(3.285 / 3.285)) //for right
+#define FULLSPEED (unsigned int) (PR3 * (double)(3.285 / (1.5*3.285))) //for right
+#define FULLSPEEDRIGHT (unsigned int) (PR3 * (double)(3.285 / (1.0*3.285))) //for right
 #define STOP 0
-#define fractionofFULLSPEED (unsigned int) ((PR3) * (double)(2.8/3.285) )
+#define fractionofFULLSPEED (unsigned int) ((PR3) * (double)(1.0/3.285) )
 
 
 
@@ -37,7 +38,7 @@ void initPWMRight(){
     OC2CONbits.OCM = 6;
 
     RPOR1bits.RP3R = 19; //OC2 18 Output Compare 2 on Pin 7
-    ODCBbits.ODB4 = 1; //Output Drain Collectore on Pin 11
+    ODCBbits.ODB4 = 1; //Output Drain Collector on Pin 11
     //ODCBbits.ODB12 = 1;
 
     OC2R = 0; //very important
@@ -48,22 +49,22 @@ void spinForward(){
     /*
      FOR LEFT
      */
-    RPOR1bits.RP2R = 0;  // Sets Pin 6 PWM to NULL. This stops Pin 6 from using PWM
-    ODCBbits.ODB1 = 0;  // Pin 5
-    RPOR0bits.RP1R = 18; // Pin 5
-    ODCBbits.ODB2 = 1; // Pin 6
-    OC1RS = FULLSPEED;
+//    RPOR1bits.RP2R = 0;  // Sets Pin 6 PWM to NULL. This stops Pin 6 from using PWM
+//    ODCBbits.ODB1 = 0;  // Pin 5
+//    RPOR0bits.RP1R = 18; // Pin 5
+//    ODCBbits.ODB2 = 1; // Pin 6
+    OC1RS = FULLSPEEDRIGHT;
 
     /*
      FOR RIGHT
      */
-    RPOR2bits.RP4R = 0; // Pin 11
-    //RPOR6bits.RP12R = 0;
-    ODCBbits.ODB3 = 0;  // Pin 7
-    RPOR1bits.RP3R = 19; // Pin 7
-    ODCBbits.ODB4 = 1; // Pin 11
+//    RPOR2bits.RP4R = 0; // Pin 11
+//    //RPOR6bits.RP12R = 0;
+//    ODCBbits.ODB3 = 0;  // Pin 7
+//    RPOR1bits.RP3R = 19; // Pin 7
+//    ODCBbits.ODB4 = 1; // Pin 11
     //ODCBbits.ODB12 = 1;
-    OC2RS = FULLSPEED;
+    OC2RS = STOP;
 
 }
 
@@ -72,12 +73,12 @@ void turnRight(){
     /*
      FOR LEFT
      */
-    OC1RS = FULLSPEED; //for left. Full Speed.
+    OC1RS = FULLSPEEDRIGHT; //for left. Full Speed.
 
     /*
      FOR RIGHT
      */
-    OC2RS = fractionofFULLSPEED;
+    OC2RS = STOP;
 
 //    delayMs(50);
 
@@ -87,13 +88,13 @@ void turnLeft(){
     /*
     FOR RIGHT
      */
-    OC2RS = FULLSPEED;
+    OC2RS = FULLSPEEDRIGHT;
 //    delayMs(50);
 
     /*
      FOR LEFT
      */
-    OC1RS = fractionofFULLSPEED;
+    OC1RS = STOP;
 
     /*
 //     FOR RIGHT
